@@ -17,6 +17,10 @@
 2. 再安装 npm install --save-dev extract-text-webpack-plugin
 3. ==一定要记得先卸载再安装，不然装不上的哦！==
 
+> 如果遇到 Please install 'webpack-cli' in addition to webpack itself to use the CLI 这样的error：
+1. 是因为webpack-dev-server又更新了，跟webpack冲突 ，去下载npm install webpack-dev-server@2.5.0 –g 来版本降低。
+
+
 ## 项目运行
 
 1. git clone git@github.com:XiaohuaLiu-Lucky/webpackProject.git
