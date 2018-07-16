@@ -13,9 +13,8 @@
 - 注意：因为该小项目开发的时候，webpack4还没出来，所以想要项目正常运行需要在webpack@3.5.5/webpack-dev-server@2.5.0的环境中运行。
 - 如果遇到 Cannot read property 'thisCompilation' of undefined 这样的error,先卸载执行 npm uninstall --save-dev extract-text-webpack-plugin,再安装 npm install --save-dev extract-text-webpack-plugin,一定要记得先卸载再安装，不然装不上的哦！
 
-
-  1. git clone git@github.com:XiaohuaLiu-Lucky/webpackProject.git
-  2. cd webpackProject
-  3. npm install
-  4. webpack-dev-server
-  5. 在http://localhost:8080/端口可以看到效果
+1. git clone git@github.com:XiaohuaLiu-Lucky/webpackProject.git
+2. cd webpackProject
+3. npm install
+4. webpack-dev-server
+5. 在http://localhost:8080/端口可以看到效果
