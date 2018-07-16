@@ -1,7 +1,7 @@
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var providePlugin = new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery'});
+var providePlugin = new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery' });
 module.exports = {
     entry: {
         index: './src/js/index.js',
@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /.js$/, use: ['babel-loader']},
+            { test: /.js$/, use: ['babel-loader'] },
             // // {test: /.css$/, use: ['style-loader','css-loader']},
             // {
             //     test: /.css$/,
@@ -23,8 +23,8 @@ module.exports = {
             //       use: "css-loader"
             //     })
             // },
-            {test: /.jpg|png|gif|svg$/, use: ['url-loader?limit=8192&name=./[name].[ext]']}, 
-            {test: /.less$/, use: ['style-loader', 'css-loader', 'less-loader']}
+            { test: /.jpg|png|gif|svg$/, use: ['url-loader?limit=8192&name=./[name].[ext]'] },
+            { test: /.less$/, use: ['style-loader', 'css-loader', 'less-loader'] }
         ]
     },
     plugins: [
@@ -32,8 +32,9 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: "commons",
             filename: "commons.js",
-            minChunks:2}),  
-        new ExtractTextPlugin("[name].css"), 
-        providePlugin     
+            minChunks: 2
+        }),
+        new ExtractTextPlugin("[name].css"),
+        providePlugin
     ]
 }
