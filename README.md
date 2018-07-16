@@ -15,7 +15,7 @@
 > 如果遇到 Cannot read property 'thisCompilation' of undefined 这样的error：
 1. 先卸载执行 npm uninstall --save-dev extract-text-webpack-plugin
 2. 再安装 npm install --save-dev extract-text-webpack-plugin
- ==一定要记得先卸载再安装，不然装不上的哦！==
+==一定要记得先卸载再安装，不然装不上的哦！==
 
 ## 项目运行
 
